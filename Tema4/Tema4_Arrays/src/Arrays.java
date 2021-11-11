@@ -25,7 +25,8 @@ public class Arrays {
         //Obtener el valor de una posicion en un array
         System.out.println(numerosDos[0]);
 
-        for(int i=0;i<=numerosDos.length-1;i++)
+        //Imprimir todos los valores de un array
+        for(int i=0;i<numerosDos.length;i++)
         {
             System.out.println(numerosDos[i]);
         }

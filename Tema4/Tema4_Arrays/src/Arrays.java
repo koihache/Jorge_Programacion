@@ -30,5 +30,35 @@ public class Arrays {
         {
             System.out.println(numerosDos[i]);
         }
+
+        //Modificar una posicion concreta del array
+        numerosDos[7] = 88;
+
+        //Meter en un array de 15 posiciones, 15 numeros aleatorios entre el 0 y el 50
+
+        int[] numerosAleatorios = new int[15];
+        int pares=0;
+        int impares=0;
+
+        for (int i = 0; i < numerosAleatorios.length; i++) {
+
+            numerosAleatorios[i] = (int)(Math.random()*51);
+
+            System.out.println("Estos son los valores del array "+numerosAleatorios[i]);
+
+        //Indica cuantos son pares y cuantos son impares
+            if (numerosAleatorios[i]%2==0){
+                pares++;
+            }else{
+                impares++;
+            }
+        }
+            System.out.println("Hay "+pares+" pares");
+            System.out.println("Hay "+impares+" impares");
+
+            //Crear un array con diferentes tipos de valor
+
+            Object[]cositas = {1, "chocolate", false};
     }
+
 }

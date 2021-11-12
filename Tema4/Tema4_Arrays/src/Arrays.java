@@ -56,9 +56,9 @@ public class Arrays {
             System.out.println("Hay "+pares+" pares");
             System.out.println("Hay "+impares+" impares");
 
-            //Crear un array con diferentes tipos de valor
+        //Crear un array con diferentes tipos de valor
 
-            Object[]cositas = {1, "chocolate", false};
+        Object[]cositas = {1, "chocolate", false};
     }
 
 }

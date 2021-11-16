@@ -42,7 +42,10 @@ public class Ejercicio7 {
                     //System.out.println(cadenaString[aleatorio]);
                     break;
                 case 3:
-
+                    for (int i = 0; i < cadenaString.length; i++) {
+                        letras += cadenaString[i].length();
+                    }
+                    System.out.println(letras);
                     break;
                 case 4:
 
@@ -57,7 +60,6 @@ public class Ejercicio7 {
                     }
                     System.out.println("Esta es la palabra mayor: "+ palabraMayor);
                     break;
-
                 case 6:
                     String palabraMenor = cadenaString[0];
                     for (String item: cadenaString) {
@@ -68,6 +70,7 @@ public class Ejercicio7 {
                     System.out.println("Esta es la palabra menor: "+ palabraMenor);
                     break;
                 case 0:
+                    System.out.println("Has salido del programa");
                     break;
             }
 

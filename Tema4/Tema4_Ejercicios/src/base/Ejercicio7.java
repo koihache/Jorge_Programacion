@@ -45,10 +45,11 @@ public class Ejercicio7 {
                     for (int i = 0; i < cadenaString.length; i++) {
                         letras += cadenaString[i].length();
                     }
-                    System.out.println(letras);
+                    System.out.println("El número total de letras es: "+letras);
                     break;
                 case 4:
-
+                        mediaLetras= letras/cadenaString.length;
+                    System.out.println("Esta es la media de las letras: "+mediaLetras);
                     break;
                 case 5:
                     String palabraMayor = "";

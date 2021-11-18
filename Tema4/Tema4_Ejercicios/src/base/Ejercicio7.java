@@ -10,7 +10,7 @@ public class Ejercicio7 {
 
         String [] cadenaString = new String[10];
         int eleccionMenu = 0;
-        int letras = 0;
+        int sumaLetras=0;
         int mediaLetras = 0;
 
 
@@ -33,29 +33,36 @@ public class Ejercicio7 {
 
             switch (eleccionMenu){
                 case 1:
-                    for(int i=0;i<cadenaString.length;i++)
-                    {
-                        System.out.printf(cadenaString[i]+",");
+                    for (String item:cadenaString) {
+                        System.out.println(item);
                     }
                     break;
                 case 2:
-                    //System.out.println(cadenaString[aleatorio]);
+                    int palabraAleatoria = (int)(Math.random()*10);
+                    System.out.println("La palabra aleatoria es: "+cadenaString[palabraAleatoria]);
                     break;
                 case 3:
-                    for (int i = 0; i < cadenaString.length; i++) {
-                        letras += cadenaString[i].length();
+                    sumaLetras = 0;
+                    for (String item:cadenaString) {
+                        sumaLetras+= item.length();
                     }
-                    System.out.println("El número total de letras es: "+letras);
+
+                    System.out.println("El número total de letras es: "+sumaLetras);
                     break;
                 case 4:
-                        mediaLetras= letras/cadenaString.length;
-                    System.out.println("Esta es la media de las letras: "+mediaLetras);
+
+                    if (sumaLetras==0){
+                        System.out.println("El numero de letras es 0 posiblemente no las has contado");
+                    }
+                    else{
+                        System.out.println("Esta es la media de las letras: "+sumaLetras/cadenaString.length);
+                    }
                     break;
                 case 5:
                     String palabraMayor = "";
 
                     for (String item: cadenaString) {
-                        if (item.length() >= palabraMayor.length()){
+                        if (item.length() > palabraMayor.length()){
                             palabraMayor = item;
                         }
                     }
@@ -77,5 +84,6 @@ public class Ejercicio7 {
 
         }while (eleccionMenu>6 || eleccionMenu<0);
 
+        entradaTeclado.close();
     }
 }
